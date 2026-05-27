@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GeoTracker</string>
+    <string name="gps_enabled">GPS activé : %s</string>
+    <string name="gps_disabled">GPS désactivé : %s</string>
+    <string name="gps_status_changed">Statut GPS [%1$s] : %2$s</string>
+    <string name="coords_received">📍 Lat: %1$s | Lon: %2$s | Alt: %3$s m | Précision: %4$s m</string>
+    <string name="show_map">Voir la carte</string>
+</resources>

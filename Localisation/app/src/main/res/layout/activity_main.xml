@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#050A14"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="40dp"
+            android:gravity="center">
+
+            <TextView
+                android:text="LOCALISATION"
+                android:textSize="30sp"
+                android:textColor="#00E5FF"
+                android:textStyle="bold"
+                android:letterSpacing="0.15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="TRACKER"
+                android:textSize="14sp"
+                android:textColor="#4A6280"
+                android:letterSpacing="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"/>
+
+            <!-- Ligne décorative -->
+            <View
+                android:layout_width="48dp"
+                android:layout_height="2dp"
+                android:background="#00E5FF"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <!-- Label STATUS -->
+        <TextView
+            android:text="SIGNAL GPS"
+            android:textSize="10sp"
+            android:textColor="#4A6280"
+            android:letterSpacing="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Card STATUS -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#0A1628"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Point vert animé simulé -->
+                <View
+                    android:id="@+id/statusDot"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/circle_green"
+                    android:layout_marginEnd="12dp"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:text="En attente du GPS..."
+                    android:textSize="14sp"
+                    android:textColor="#7A8FA6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Label LATITUDE -->
+        <TextView
+            android:text="LATITUDE"
+            android:textSize="10sp"
+            android:textColor="#4A6280"
+            android:letterSpacing="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Card LATITUDE -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#0A1628"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLatitude"
+                    android:text="—"
+                    android:textSize="28sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Label LONGITUDE -->
+        <TextView
+            android:text="LONGITUDE"
+            android:textSize="10sp"
+            android:textColor="#4A6280"
+            android:letterSpacing="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Card LONGITUDE -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#0A1628"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLongitude"
+                    android:text="—"
+                    android:textSize="28sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Label DERNIÈRE MISE À JOUR -->
+        <TextView
+            android:text="DERNIÈRE MISE À JOUR"
+            android:textSize="10sp"
+            android:textColor="#4A6280"
+            android:letterSpacing="0.3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Card DATE -->
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardBackgroundColor="#0A1628"
+            card_view:cardCornerRadius="16dp"
+            card_view:cardElevation="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLastUpdate"
+                    android:text="—"
+                    android:textSize="14sp"
+                    android:textColor="#7A8FA6"
+                    android:fontFamily="monospace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bouton VOIR LA CARTE -->
+        <Button
+            android:id="@+id/btnOpenMap"
+            android:text="VOIR LA CARTE"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#00E5FF"
+            android:textColor="#050A14"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
